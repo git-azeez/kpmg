@@ -9,3 +9,11 @@ value = a
 Hints
 We would like to see some tests. A quick read to help you along the way
 We would expect it in any other language apart from elixir.
+
+
+
+
+In solving this, I have iterated the elements of the dictionary and made up a simple function
+Which iterates depending on the value present in the "key" varaible
+
+
