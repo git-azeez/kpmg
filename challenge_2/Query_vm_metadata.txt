@@ -1,0 +1,23 @@
+
+                     # Considering VM in hosted on GCP
+
+All metadata(key:value) of the VM is stored in the metadata server. So by making an API call will
+fetch the details
+
+
+Step1: Login to the vm or from the gcp shell
+step2: Make a curl request to below URL
+
+Full URL: http://metadata.google.internal/computeMetadata/v1/
+
+
+We have wide variety of endpoints available.
+for example:attributes/,disks/,machine-type/,network-interfaces/,scheduling/ etc.
+
+Inoder to get the output of the json we need to define an argument "alt=json" in the API call
+
+
+
+example: To get the  metadata of disks 
+
+curl "http://metadata.google.internal/computeMetadata/v1/instance/disks/1/mode?alt=json" -H "Metadata-Flavor: Google"
