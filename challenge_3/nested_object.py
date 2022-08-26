@@ -13,7 +13,7 @@ def nested_object(object,key):
         return output
 
 
- 
+ # usage example
 print(nested_object({"a":{"b":{"c":"d"}}}, "b"))
 
 

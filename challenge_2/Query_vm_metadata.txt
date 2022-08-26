@@ -18,6 +18,6 @@ Inoder to get the output of the json we need to define an argument "alt=json" in
 
 
 
-example: To get the  metadata of disks 
+example: To get the  metadata of disks and save it in a txt file
 
-curl "http://metadata.google.internal/computeMetadata/v1/instance/disks/1/mode?alt=json" -H "Metadata-Flavor: Google"
+curl "http://metadata.google.internal/computeMetadata/v1/instance/disks/1/mode?alt=json" -H "Metadata-Flavor: Google" >> metadata.txt
